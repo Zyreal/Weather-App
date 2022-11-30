@@ -1,0 +1,57 @@
+.place {
+    padding-top: 32px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+    .location {
+        font-size: 32px;
+    }
+    .date {
+        font-style: italic;
+    }
+    @media screen and (max-width: 768px) {
+        padding-top: 16px;
+    }
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .weather-box {
+        margin-top: 50px;
+        display: flex;
+        width: 35%;
+        @media screen and (max-width: 768px) {
+            width: 50%
+        }
+        justify-content: space-around;
+        .temperature {
+            display: flex;
+            color: white;
+            .temp-number {
+                font-size: 128px;
+                @media screen and (max-width: 768px) {
+                    font-size: 64px;
+                }
+            }
+            .temp-degree {
+                padding-top: 16px;
+                font-size: 48px;
+                @media screen and (max-width: 768px) {
+                    font-size: 32px;
+                }
+            }
+        }
+        .status {
+            color: white;
+            font-size: 16px;
+            height: 100%;
+            align-self:center;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            font-style: italic;
+        }
+    }
+}

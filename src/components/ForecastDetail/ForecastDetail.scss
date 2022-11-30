@@ -1,0 +1,50 @@
+.forecast-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: white;
+    font-size: 26px;
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+    }
+    .daily {
+        width: 70%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .weather-cards {
+        width: 70%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            width: 98%
+        }
+    }
+    .card {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+hr {
+    width: 70%;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px white solid;
+    @media screen and (max-width: 768px) {
+        width: 98%;
+    }
+
+}
